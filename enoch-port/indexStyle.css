@@ -1,0 +1,85 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--mid-blue);
+}
+
+
+:root {
+    --dark-blue: #0e1a40;
+    --mid-blue: #222f5b;
+    --grey: #5d5d5d;
+    --tan: #946b2b;
+    --black: #000000;
+}
+
+nav {
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin-bottom: 2rem; 
+}
+
+nav ul li a {
+    color: var(--grey);
+    font-size: 5rem;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color:var(--dark-blue);
+}
+
+ul {
+    list-style-type: none;
+}
+
+#about-list { 
+    margin-top: 6rem;
+}
+
+.fas.fa-angle-double-down {
+    color: var(--grey);
+}
+
+img.rounded {
+    height: 70%;
+    margin-left: 20%;
+}
+
+
+#about {
+    background-color: var(--grey);
+}
+
+#portfolio {
+    background-color:var(--black);
+}
+
+#skills {
+    background-color:var(--tan);
+}
+
+#experience {
+    background-color:var(--dark-blue);
+}
+
+#about-h1 {
+    color: var(--black);
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.fas.fa-angle-double-down {
+    color: var(--black);
+    margin-left: 50%;
+    font-size: 50px;
+    margin-top: 2%;
+}
