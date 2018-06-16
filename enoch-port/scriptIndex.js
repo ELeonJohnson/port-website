@@ -31,11 +31,35 @@
     });
 
     $("#arrow-click").click(function () {
+        $("body").css("background-color", "");
+        $("#nav").removeClass("slideOutUp").addClass("animated slideInDown");
+        $("#nav").show();
         $("#about").hide();
-        $("#nav").show(); 
-        $("#nav").addClass("animated slideInDown");
-        
     });
+
+
+    var type = new Typed('#about-text', {
+        strings: ["About"],
+        typeSpeed: 100
+    });
+
+    var type = new Typed('#portfolio-text', {
+        strings: ["Portfolio"],
+        typeSpeed: 100
+    });
+
+    var type = new Typed('#skills-text', {
+        strings: ["Skills"],
+        typeSpeed: 100
+    });
+
+    var type = new Typed('#experience-text', {
+        strings: ["Experience"],
+        typeSpeed: 100
+    });
+
+
+
 
   
 });
