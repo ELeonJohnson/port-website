@@ -52,48 +52,101 @@ nav ul li a:hover {
     opacity: 0;
 }
 
-
-.fas.fa-angle-double-down {
-    color: var(--grey);
-}
-
-#about {
-    background-color: var(--grey);
-}
-
-#portfolio {
-    background-color:var(--black);
-}
-
-#skills {
-    background-color:var(--tan);
-}
-
-#experience {
-    background-color:var(--dark-blue);
-}
-
-#about-h1 {
-    color: var(--mid-blue);
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-
-.fas.fa-angle-double-down {
-    color: var(--mid-blue);
+.fas.fa-angle-double-up {
     margin-left: 49%;
     font-size: 50px;
     margin-top: 2%;
     transition: all .3s ease-in-out;
 }
 
+.fas.fa-angle-double-up:hover {
+     transform: scale(1.3);
+}
+
 .fas.fa-angle-double-down:hover {
     transform: scale(1.3);
 }
 
-h2 {
+.fas.fa-angle-double-down {
+    margin-left: 49%;
+    font-size: 50px;
+    margin-top: 11%;
+    transition: all .3s ease-in-out;
+}
+
+#arrow-click-down-about {
+    color: var(--mid-blue);
+    
+}
+
+#arrow-click-up-about {
+    color: var(--mid-blue);
+  
+}
+
+#arrow-click-down-port {
+    color: var(--black);
+}
+
+#arrow-click-up-port {
+    color: var(--black);
+}
+
+#arrow-click-up-skills {
+    color: var(--whiteSmoke);
+}
+
+#arrow-click-down-skills {
+    color: var(--whiteSmoke);
+}
+
+#arrow-click-up-experience {
+    color: var(--dark-blue);
+}
+
+
+
+#about {
+    background-color: var(--grey);
+}
+
+#portfolio {
+    background-color:var(--tan);
+}
+
+#skills {
+    background-color:var(--black);
+}
+
+#experience {
+    background-color:var(--whiteSmoke);
+}
+
+.all-h1-style {
+ text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#about-h1 {
+    color: var(--mid-blue);
+   
+}
+
+#port-h1 {
+    color: var(--black);
+ }
+
+#skills-h1 {
+    color: var(--whiteSmoke);
+}
+
+#experience-h1 {
+    color: var(--dark-blue);
+}
+
+.about-h2 {
     text-align: center;
     margin-bottom: 5%;
     color: var(--mid-blue);
@@ -102,8 +155,5 @@ h2 {
  .about-p {
     text-align: center;
     color: var(--whiteSmoke);
+    margin: 5%;
 }
-
- #testing {
-     color: white;
- }

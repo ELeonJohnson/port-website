@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+
+    //Nav & Arrow Navigation 
     $(".hide").hide();
 
     $(".list-item").click(function () {
@@ -14,30 +16,74 @@
 
     $("#portfolio-click").click(function () {
         $("#portfolio").addClass("animated slideInUp");
-        $("body").css("background-color", "var(--black)");
+        $("body").css("background-color", "var(--tan)");
         $("#portfolio").show();
     });
 
     $("#skills-click").click(function () {
         $("#skills").addClass("animated slideInUp");
-        $("body").css("background-color", "var(--tan)");
+        $("body").css("background-color", "var(--black)");
         $("#skills").show();
     });
 
     $("#experience-click").click(function () {
         $("#experience").addClass("animated slideInUp");
-        $("body").css("background-color", "var(--dark-blue)");
+        $("body").css("background-color", "var(--whiteSmoke)");
         $("#experience").show();
     });
 
-    $("#arrow-click").click(function () {
+    $("#arrow-click-up-about").click(function () {
         $("body").css("background-color", "");
         $("#nav").removeClass("slideOutUp").addClass("animated slideInDown");
         $("#nav").show();
         $("#about").hide();
     });
 
+    $("#arrow-click-down-about").click(function () {
+        $("body").css("background-color", "var(--tan)");
+        $("#portfolio").addClass("animated slideInDown");
+        $("#portfolio").show();
+        $("#about").hide();
+    });
 
+    $("#arrow-click-up-port").click(function () {
+        $("body").css("background-color", "");
+        $("about").removeClass("slideOutUp").addClass("animated slideInUp");
+        $("body").css("background-color", "var(--grey)");
+        $("#about").show();
+        $("#portfolio").hide();
+    });
+
+    $("#arrow-click-down-port").click(function () {
+        $("body").css("background-color", "var(--black)");
+        $("#skills").addClass("animated slideInDown");
+        $("#skills").show();
+        $("#portfolio").hide();
+    });
+
+    $("#arrow-click-up-skills").click(function () {
+        $("body").css("background-color", "var(--tan)");
+        $("#portfolio").addClass("animated slideInUp");
+        $("#portfolio").show();
+        $("#skills").hide();
+    });
+
+    $("#arrow-click-down-skills").click(function () {
+        $("body").css("background-color", "var(--whiteSmoke)");
+        $("#experience").addClass("animated slideInDown");
+        $("#experience").show();
+        $("#skills").hide();
+
+    });
+
+    $("#arrow-click-up-experience").click(function () {
+        $("body").css("background-color", "var(--black)");
+        $("#skills").addClass("animated slideInUp");
+        $("#skills").show();
+        $("#experience").hide();
+    });
+
+    //TypedJS Library Code
     var type = new Typed('#about-text', {
         strings: ["About"],
         typeSpeed: 100
