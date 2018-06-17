@@ -4,7 +4,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    
+    font-family: 'Karla', sans-serif;
 }
 
 body {
@@ -131,7 +131,7 @@ nav ul li a:hover {
 
 #about-h1 {
     color: var(--mid-blue);
-   
+  
 }
 
 #port-h1 {
@@ -146,14 +146,35 @@ nav ul li a:hover {
     color: var(--dark-blue);
 }
 
-.about-h2 {
+
+.port-h3 {
     text-align: center;
+    color: var(--black);
     margin-bottom: 5%;
-    color: var(--mid-blue);
 }
 
- .about-p {
+.about-p {
     text-align: center;
     color: var(--whiteSmoke);
     margin: 5%;
+  
 }
+
+#photo-headshot {
+    height: 300px;
+    padding-left: 29%;
+}
+.nested-port-row {
+    margin-left: 12%;
+}
+
+
+.port-img {
+    height: 100%;
+    width: 100%;
+}
+
+div.card {
+    margin-bottom: 20%;
+}
+

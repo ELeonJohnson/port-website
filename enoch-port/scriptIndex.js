@@ -11,6 +11,7 @@
     $("#about-click").click(function () {
         $("body").css("background-color", "var(--grey)");
         $("#about").addClass("animated slideInDown");
+        $("#about-h1").addClass("animated slideInLeft");
         $("#about").show();
     });
 
@@ -47,8 +48,7 @@
     });
 
     $("#arrow-click-up-port").click(function () {
-        $("body").css("background-color", "");
-        $("about").removeClass("slideOutUp").addClass("animated slideInUp");
+        $("#about").addClass("animated slideInDown");
         $("body").css("background-color", "var(--grey)");
         $("#about").show();
         $("#portfolio").hide();
